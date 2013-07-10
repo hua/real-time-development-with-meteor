@@ -24,3 +24,13 @@ And every time you start development, just run this:
 ```
 
 Have a play around, and enjoy seeing realtime feedback from unit and acceptance tests, as well as test coverage every time you save a file. If you'd like to use RTD in your Meteor project, head over to [the RTD project page.](http://xolvio.github.io/rtd/)
+
+## Helpers
+
+Run these commands from the Chrome console when you visit <http://localhost:3000> or <https://sincerely-fitness-2013.herokuapp.com/>.
+
+### Reset scores to zero
+
+```js
+Scores.find({}).forEach(function(score) { Scores.remove(score._id) })
+```
